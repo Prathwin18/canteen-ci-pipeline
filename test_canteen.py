@@ -26,5 +26,3 @@ def test_zero_order():
 def test_negative_subtotal():
     with pytest.raises(ValueError):
         calculate_total(-100)
-def test_temporary_ci_failure():
-    assert calculate_total(100) == Decimal("999.00")
